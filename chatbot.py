@@ -169,6 +169,6 @@ def run_chat_bot():
 if __name__ == "__main__":
     while True:
         run_chat_bot()
-        wait_time = random.randint(0.5, 2) * 3600  # Thời gian chờ từ 0.5h đến 2h, muốn thay đổi thì đổi số 0.5 và 2 tùy, range hiện tại là 0.5-2h
+        wait_time = random.uniform(0.5, 2) * 3600
         print(f"Đợi {wait_time / 3600:.2f} giờ trước khi chạy lại...")
         time.sleep(wait_time)
